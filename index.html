@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+
+<html lang="en" ⚡="">
+<head><script async="" src="https://cdn.ampproject.org/v0.js"></script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>take</title>
+<style amp-custom="">* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: "Open Sans", sans-serif;
+}
+
+button:focus,
+button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    position: relative;
+    width: fit-content;
+}
+
+.container {
+    width: 100%;
+    max-width: 1260px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header {
+    position: relative;
+    background-image: url(../resources/images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 950px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.align-items-start {
+    align-items: start;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-end {
+    align-items: end;
+}
+
+.justify-content-start {
+    justify-content: start;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-end {
+    justify-content: end;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.left-side-text {
+    position: absolute;
+    left: 65px;
+}
+
+.left-side-text span {
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.left-side-text span:last-of-type {
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.logo {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+}
+
+.header-content {
+    position: relative;
+    gap: 20px;
+    height: 100%;
+    color: white;
+}
+
+.header-content__img {
+    position: absolute;
+    right: 60px;
+    bottom: -210px;
+}
+
+header .left-side-text {
+    top: 50%;
+    transform: translate(-50%) rotate(-90deg);
+}
+
+.header-content h1 {
+    font-weight: 300;
+    font-size: 60px;
+}
+
+.header-content p {
+    font-size: 13px;
+    font-weight: 400;
+    max-width: 440px;
+    line-height: 24px;
+}
+
+.new-text {
+    margin-top: 75px;
+}
+
+.new-text__content,
+.new-text__content div {
+    gap: 30px;
+}
+
+.new-text__content>div>p,
+.new-text__content>div>div div {
+    width: 50%;
+}
+
+.new-text__content h2 {
+    font-size: 35px;
+    font-weight: 300;
+    color: #222626;
+}
+
+.new-text__content p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #959595;
+}
+
+.design-block {
+    margin-top: 90px;
+    position: relative;
+}
+
+.design-block__row {
+    display: flex;
+    height: 280px;
+}
+
+.design-block__row>div {
+    padding: 40px;
+    gap: 25px;
+    color: white;
+    position: relative;
+}
+
+.design-block__content>div:last-of-type>div:nth-of-type(2),
+.design-block__content>div:first-of-type>div {
+    width: 400px;
+    min-width: 400px;
+}
+
+.design-block__content>div:last-of-type>div:nth-of-type(1),
+.design-block__content>div:last-of-type>div:nth-of-type(3) {
+    width: 800px;
+    min-width: 800px;
+}
+
+.design-block__content>div:first-of-type>div:nth-of-type(1) {
+    background-color: #f5989d;
+}
+
+.design-block__content>div:first-of-type>div:nth-of-type(2) {
+    background-color: #615f7d;
+}
+
+.design-block__content>div:first-of-type>div:nth-of-type(3) {
+    background-image: url(../resources/images/block-3.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.design-block__content>div:first-of-type>div:nth-of-type(4) {
+    background-color: #bd8cbf;
+}
+
+.design-block__content>div:last-of-type>div:nth-of-type(1) {
+    background-image: url(../resources/images/block-5.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.design-block__content>div:last-of-type>div:nth-of-type(2) {
+    background-color: #82ca9c;
+}
+
+.design-block__content>div:last-of-type>div:nth-of-type(3) {
+    background-image: url(../resources/images/block-7.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.design-block__content>div:last-of-type>div:nth-of-type(1) p {
+    max-width: 430px;
+}
+
+.design-block__more-btn {
+    position: absolute;
+    left: 40px;
+    bottom: 80px;
+}
+
+.design-block__more-btn::after {
+    content: '→';
+    color: white;
+    position: absolute;
+    left: calc(100% + 20px);
+}
+
+.design-block__favorite-btn {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+}
+
+.design-block__favorite-btn::after {
+    content: url(../resources/images/heart.png);
+}
+
+.details-block {
+    margin-top: 100px;
+    position: relative;
+}
+
+.details-block .left-side-text span {
+    color: #b8b8b8;
+    margin-left: 0;
+}
+
+.details-block .left-side-text {
+    top: 70px;
+    transform: rotate(-90deg);
+}
+
+.details-content {
+    gap: 70px;
+}
+
+.details-content h2 {
+    font-size: 35px;
+    font-weight: 300;
+    color: #222626;
+}
+
+.details-content__items>div,
+.details-content__items {
+    gap: 30px;
+}
+
+.details-content__items span {
+    font-size: 13px;
+    font-weight: 600;
+    color: #67676d;
+}
+
+.details-content__items p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #959595;
+    line-height: 24px;
+}
+
+.power-block {
+    margin-top: 160px;
+    height: 870px;
+    background-image: url(../resources/images/car-fon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.power-block .container {
+    position: relative;
+}
+
+.power-block__content {
+    gap: 25px;
+    color: white;
+    position: absolute;
+    left: 30px;
+    bottom: 135px;
+    max-width: 510px;
+}
+
+.power-block__btn {
+    position: relative;
+}
+
+.power-block__btn::after {
+    content: '→';
+    color: white;
+    position: absolute;
+    left: calc(100% + 20px);
+}
+
+.power-block__content h1 {
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.power-block__content p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.power-block__btn {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.reasons-block {
+    position: relative;
+    padding: 130px 30px 16px 30px;
+    background-color: #82ca9c;
+}
+
+.reasons-block .details-content h2,
+.reasons-block .details-content span,
+.reasons-block .details-content p {
+    color: white;
+}
+
+.price-block .left-side-text span,
+.reasons-block .left-side-text span {
+    margin-left: 0;
+}
+
+.price-block .left-side-text,
+.reasons-block .left-side-text {
+    top: 170px;
+    transform: rotate(-90deg);
+}
+
+.price-block {
+    position: relative;
+    padding: 100px 30px 140px 30px;
+    background-color: #f6f7fa;
+}
+
+.price-item {
+    padding: 50px;
+    gap: 30px;
+}
+
+.price-bage {
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    background-color: #e1e1e1;
+    width: fit-content;
+    min-width: 80px;
+    text-align: center;
+}
+
+.price__os {
+    gap: 20px;
+}
+
+.price-item h2 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #2e3b4e;
+}
+
+.price-item p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #8297a7;
+}
+
+.price-item button {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    padding: 18px 20px;
+    border-radius: 6px;
+    background-color: #82ca9c;
+    transition: background-color 0.3s ease;
+}
+
+.price-item button:hover {
+    background-color: #77cc96;
+}
+
+.price-item.active {
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.271);
+    ;
+}
+
+.price-item.active .price-bage {
+    background-color: #bd8cbf;
+}
+
+.price-block .left-side-text span {
+    color: #b8b8b8;
+}
+
+.price-block .left-side-text {
+    top: 180px;
+}
+
+footer {
+    background-color: #192431;
+}
+
+.footer-content {
+    padding: 130px 0 160px 0;
+}
+
+.footer-content {
+    gap: 70px;
+}
+
+.footer-content__left,
+.footer-content__right {
+    padding: 0 30px;
+}
+
+.footer-content__left {
+    width: 60%;
+    gap: 75px;
+}
+
+.footer-content__right {
+    width: 40%;
+    gap: 20px;
+}
+
+.footer-content a,
+.footer-content p,
+.footer-content span {
+    font-size: 13px;
+    color: #f6f7fa;
+}
+
+.footer-content span {
+    font-weight: 600;
+
+}
+
+.footer-content a,
+.footer-content p {
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 24px;
+}
+
+.footer-content__right-input {
+    height: 60px;
+    margin-top: 5px;
+}
+
+.footer-content__right-input input {
+    border: none;
+    background-color: white;
+    padding: 15px;
+    font-size: 14px;
+    color: #192431;
+    height: 100%;
+    width: calc(100% - 70px);
+    outline: none;
+}
+
+.footer-content__right-input button {
+    background-color: #82ca9c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 70px;
+}
+
+.footer-content__right span:last-of-type {
+    font-size: 12px;
+    color: #57697f;
+}
+
+.footer-content__left-info {
+    gap: 30px;
+}
+
+.footer-content__items {
+    gap: 70px;
+}
+
+.footer-content__column {
+    gap: 10px;
+}
+
+.footer-content__column span {
+    margin-bottom: 15px;
+}
+
+@media (max-width: 1500px) {
+    .left-side-text {
+        left: 20px;
+    }
+
+    .price-block .left-side-text,
+    .reasons-block .left-side-text,
+    .details-block .left-side-text {
+        left: 0;
+    }
+}
+
+@media (max-width: 1360px) {
+    .left-side-text {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .design-block__row {
+        height: auto;
+    }
+
+    .design-block__content>div:first-of-type {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .design-block__content>div:first-of-type>div {
+        width: auto;
+        min-width: auto;
+        min-height: 250px;
+    }
+
+    .design-block__more-btn {
+        bottom: 20px;
+    }
+
+    .design-block__content>div:first-of-type>div:nth-of-type(1) {
+        grid-column: span 2 / span 2;
+        grid-row: span 3 / span 3;
+    }
+
+    .design-block__content>div:first-of-type>div:nth-of-type(2) {
+        grid-column: span 2 / span 2;
+        grid-row: span 3 / span 3;
+        grid-column-start: 3;
+    }
+
+    .design-block__content>div:first-of-type>div:nth-of-type(3) {
+        grid-column: span 2 / span 2;
+        grid-row: span 3 / span 3;
+        grid-row-start: 4;
+    }
+
+    .design-block__content>div:first-of-type>div:nth-of-type(4) {
+        grid-column: span 2 / span 2;
+        grid-row: span 3 / span 3;
+        grid-column-start: 3;
+        grid-row-start: 4;
+    }
+
+    .design-block__content>div:last-of-type {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .design-block__content>div:last-of-type>div {
+        width: auto !important;
+        min-width: auto !important;
+        min-height: 250px;
+    }
+
+    .design-block__content>div:last-of-type>div:nth-of-type(1) {
+        grid-column: span 2 / span 2;
+        grid-row: span 3 / span 3;
+    }
+
+    .design-block__content>div:last-of-type>div:nth-of-type(2) {
+        grid-column: span 2 / span 2;
+        grid-row: span 3 / span 3;
+        grid-column-start: 3;
+    }
+
+    .design-block__content>div:last-of-type>div:nth-of-type(3) {
+        grid-column: span 4 / span 4;
+        grid-row: span 3 / span 3;
+        grid-row-start: 4;
+    }
+}
+
+@media (max-width: 860px) {
+    .header-content {
+        justify-content: start;
+        padding-left: 30px;
+    }
+
+    .header-content h1 {
+        margin-top: 120px;
+    }
+
+    .header-content__img {
+        max-width: 500px;
+        left: calc(50% - 100px);
+        right: auto;
+        transform: translateX(-50%);
+        bottom: -90px;
+    }
+
+    .new-text {
+        margin-top: 100px;
+    }
+
+    .new-text__content>div>div div {
+        flex-direction: column;
+    }
+
+    .new-text__content>div>p,
+    .new-text__content>div>div div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .details-content__items {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-content {
+        flex-direction: column-reverse;
+    }
+
+    .footer-content__left,
+    .footer-content__right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .price-content,
+    .new-text__content div {
+        flex-direction: column;
+    }
+
+    .footer-content__items {
+        flex-wrap: wrap;
+    }
+
+    .power-block__content h1 {
+        font-size: 40px;
+    }
+
+    .header-content h1 {
+        font-size: 40px;
+    }
+
+    .power-block__content {
+        left: 15px;
+    }
+
+    .price-block,
+    .reasons-block {
+        padding: 80px 15px 40px 15px;
+    }
+
+    .power-block {
+        height: 700px;
+    }
+}
+
+@media (max-width: 480px) {
+    .design-block__row {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto !important;
+    }
+
+    .design-block__row > div {
+        grid-column: auto !important;
+        grid-row: auto !important;
+    }
+
+    .header-content__img {
+        max-width: 450px;
+    }
+}</style></head>
+<body>
+<header>
+<div class="container h-100">
+<div class="header-content d-flex flex-column justify-content-center"><amp-img alt="header-bg" height="600" layout="responsive" src="resources/images/header-bg.png" width="1200"></amp-img>
+<a class="logo" href="index.html"><amp-img alt="" height="400" layout="responsive" src="resources/images/logo.png" width="600"></amp-img></a>
+<h1>Picture perfect</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+<amp-img alt="" class="header-content__img" height="400" layout="responsive" src="resources/images/iphone.png" width="600"></amp-img>
+</div>
+</div>
+<div class="left-side-text">
+<span>perfect</span>
+<span>takpapp.com</span>
+</div>
+</header>
+<section class="new-text">
+<div class="container">
+<div class="new-text__content d-flex flex-column">
+<h2>Start something new</h2>
+<div class="d-flex flex-column">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
+                    </p>
+<div class="d-flex">
+<div class="d-flex flex-column">
+<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur.
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                mollit anim id est laborum.
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam.
+                            </p>
+<p> eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                                explicabo.
+                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                                consequuntur
+                                magni dolores eos qui ratione voluptatem.
+                            </p>
+</div>
+<div class="d-flex flex-column">
+<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                                consequuntur magni dolores
+                                eos qui ratione voluptatem sequi nesciunt.
+                            </p>
+<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                                velit, sed quia non
+                                numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                                voluptatem.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="design-block">
+<div class="container">
+<div class="d-flex flex-column design-block__content">
+<div class="design-block__row">
+<div class="d-flex flex-column">
+<h2>Design quality</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            adipisicing .</p>
+<button class="design-block__more-btn">Find Out more</button>
+</div>
+<div class="d-flex flex-column">
+<h2>Built to last</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            adipisicing .</p>
+<button class="design-block__more-btn">Find Out more</button>
+</div>
+<div class="d-flex flex-column">
+<h2>Our clients</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            adipisicing.</p>
+<button class="design-block__more-btn">Get insights</button>
+<button class="design-block__favorite-btn"></button>
+</div>
+<div class="d-flex flex-column">
+<h2>How to shoo great</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            adipisicing.</p>
+<button class="design-block__more-btn">Find Out more</button>
+</div>
+</div>
+<div class="design-block__row">
+<div class="d-flex flex-column">
+<h2>Sign up &amp; see why</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            adipisicing.</p>
+<button class="design-block__more-btn">Get Started Now</button>
+<button class="design-block__favorite-btn"></button>
+</div>
+<div class="d-flex flex-column">
+<h2>Perfect pictures</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            adipisicing.</p>
+<button class="design-block__more-btn">Find Out more </button>
+</div>
+<div class="d-flex flex-column">
+<h2>STart somthing new</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            adipisicing.</p>
+<button class="design-block__more-btn">Get Started Now</button>
+<button class="design-block__favorite-btn"></button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="details-block">
+<div class="left-side-text">
+<span>takpapp.com</span>
+</div>
+<div class="container">
+<div class="details-content d-flex flex-column">
+<h2>A look at the details</h2>
+<div class="details-content__items d-flex">
+<div class="d-flex flex-column">
+<span>Web based</span>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip
+                            ex ea commodo consequat.
+                        </p>
+</div>
+<div class="d-flex flex-column">
+<span>Performance</span>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip
+                            ex ea commodo consequat.
+                        </p>
+</div>
+<div class="d-flex flex-column">
+<span>Clultral</span>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip
+                            ex ea commodo consequat.
+                        </p>
+</div>
+<div class="d-flex flex-column">
+<span>Sustainability</span>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip
+                            ex ea commodo consequat.
+                        </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="power-block">
+<div class="container h-100">
+<div class="power-block__content d-flex flex-column">
+<h1>More power behind every pixel.</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea commodo consequat.
+                </p>
+<button class="power-block__btn">See the options</button>
+</div>
+</div>
+</section>
+<section class="reasons-block">
+<div class="left-side-text">
+<span>takpapp.com</span>
+</div>
+<div class="container">
+<div class="details-content d-flex flex-column">
+<h2>Reasons to get onboard</h2>
+<div class="details-content__items d-flex">
+<div class="d-flex flex-column">
+<span>Web based</span>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut
+                            aliquip
+                            ex ea commodo consequat.
+                        </p>
+</div>
+<div class="d-flex flex-column">
+<span>Team login</span>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut
+                            aliquip
+                            ex ea commodo consequat.
+                        </p>
+</div>
+<div class="d-flex flex-column">
+<span>Great Support</span>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut
+                            aliquip
+                            ex ea commodo consequat.
+                        </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="price-block"><amp-img alt="price-bg" height="600" layout="responsive" src="resources/images/price-bg.png" width="1200"></amp-img>
+<div class="left-side-text">
+<span>takpapp.com</span>
+</div>
+<div class="container">
+<div class="price-content d-flex">
+<div class="price-item d-flex flex-column">
+<span class="price-bage">Legacy</span>
+<h2>Go it solo</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    </p>
+<button>Buy now $9</button>
+<div class="price__os d-flex align-items-center">
+<amp-img alt="" height="400" layout="responsive" src="resources/images/fa-apple.png" width="600"></amp-img>
+<amp-img alt="" height="400" layout="responsive" src="resources/images/fa-windows.png" width="600"></amp-img>
+</div>
+</div>
+<div class="price-item d-flex flex-column active">
+<span class="price-bage">Most Popular</span>
+<h2>Team Plan</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    </p>
+<button>Buy now $18</button>
+<div class="price__os d-flex align-items-center">
+<amp-img alt="" height="400" layout="responsive" src="resources/images/fa-apple.png" width="600"></amp-img>
+<amp-img alt="" height="400" layout="responsive" src="resources/images/fa-windows.png" width="600"></amp-img>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer>
+<div class="container">
+<div class="footer-content d-flex"><amp-img alt="footer" height="600" layout="responsive" src="resources/images/footer.png" width="1200"></amp-img>
+<div class="footer-content__left d-flex flex-column">
+<div class="footer-content__left-info d-flex flex-column">
+<span>Get in touch</span>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore 
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                            aliquip ex ea commodo consequat.
+                        </p>
+</div>
+<div class="footer-content__items d-flex">
+<div class="footer-content__column d-flex flex-column">
+<span>Resources</span>
+<a href="#">Tour</a>
+<a href="#">Customers</a>
+<a href="#">Pricing and Plans</a>
+<a href="#">New Features</a>
+<a href="#">Education</a>
+</div>
+<div class="footer-content__column d-flex flex-column">
+<span>Features</span>
+<a href="#">Tour</a>
+<a href="#">Customers</a>
+<a href="#">Pricing and Plans</a>
+<a href="#">New Features</a>
+<a href="#">Education</a>
+</div>
+<div class="footer-content__column d-flex flex-column">
+<span>How To’s</span>
+<a href="#">Tour</a>
+<a href="#">Customers</a>
+<a href="#">Pricing and Plans</a>
+<a href="#">New Features</a>
+<a href="#">Education</a>
+</div>
+</div>
+</div>
+<div class="footer-content__right d-flex flex-column">
+<span>Stay in touch</span>
+<div class="footer-content__right-input d-flex">
+<input id="" name="" type="text"/>
+<button> <amp-img alt="" height="400" layout="responsive" src="resources/images/check.png" width="600"></amp-img></button>
+</div>
+<span>We don’t send spam. Actually, who are we kiding, we’ll spam the shit out of you’r inbox</span>
+</div>
+</div>
+</div>
+</footer>
+</body>
+</html>
